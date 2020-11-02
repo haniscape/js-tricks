@@ -1,0 +1,21 @@
+.container{
+    width: 1200px;
+    height: 30vh;
+    margin: 0 auto;
+}
+div.hide-me {
+    background: linear-gradient(to right, #5b31a0, #9D50BB);
+    color: #fff;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1em;;
+    width: auto;
+    height: 300px;
+    padding: 20px;
+}
+
+input#toggler {
+    margin: 30px auto;
+    margin: 20px auto;
+    align-self: center;
+}
+
