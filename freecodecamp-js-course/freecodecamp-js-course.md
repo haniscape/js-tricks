@@ -58,13 +58,19 @@ const pi = 3.14;
 
 #### Declaring and Assigning Variables
 1. Declare a variable using: `var` , `let` or `const`
-`var a;`
+```
+var a;
+```
 
 2. Declare new variable and Assign its value using `=` , this is called INITIALIZAING
-`var b = 5;`
+```
+var b = 5;
+```
 
 3. you can check the variable value in  _**Console**_ by mentioning its name
-`a;`  `//This returns undefined`
+```
+a;  //This returns undefined until now since it is not initialized
+```
 
 4. You can assign a value to an already declared variable
 ```
