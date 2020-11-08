@@ -67,11 +67,51 @@ var a;
 var b = 5;
 ```
 
-3. you can check the variable value in  _**Console**_ by mentioning its name
+3. you can check the variable value in  _**Console**_ by mentioning its name,  or by console.log
 ```
-a;  //This returns undefined until now since it is not initialized
+a;  //will return undefined - because a is not given a value yet 
+console.log(a);   // still returns undefined
 ```
 
 4. You can assign a value to an already declared variable
 ```
 var a = 7;
+```
+
+5. you can use ARITHMATIC operations with variables:
+```
+a + b;  // will return 12 (7 + 5)
+```
+
+
+6. Make 2 variables _equal_ using also `=`
+```
+a = b;
+a + b;   // now it will return 10 (5 + 5)
+```
+
+
+
+
+#### Initializing Variables with the Assignment Operator (=)
+
+* These Variables are   UNINITIALIZED (that means they are declared but not given values)
+```
+var a;
+var b;
+var c;
+```
+
+* Initialize them using the Assignment Operator `=`
+```
+var a = 5;
+var b = 10;
+var c = "I am a";
+```
+
+* Do Arithmatic operations (you can even mention the variable name on both sides)
+```
+a = a + 1;   // it returns 6 
+b = b + 14;  // it returns 24
+c = c + " string";   // notice how we CONCATINATED 2 strings together using (+)
+```
