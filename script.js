@@ -31,9 +31,10 @@ var number = 5;  // in-line comment
 * DATA usually is stored in a VARIABLE
 * you can declare a variable with 3 keywords:
 * VAR, LET and CONST
-var myName = "Hany";   // VAR is gonna be used throughout the whole program
+
+var myName = "Hany";   // VAR is used throughout the whole program
 let ourName = "FreeCodeCamp";   // LET only used within the scope where you declare it
-const pi = 3.14;   // is a constant , that means it cannot change value
+const pi = 3.14;   // is a constant , that means it cannot be changed
 */
 
 
