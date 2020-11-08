@@ -35,19 +35,25 @@ the 7 data types of JS are:
 ## Variables
 
 - Data are usually stored in a **variable**
-- Variables are declared `given a name` using:  var ,  let or const
+- Variables are declared (given a name) using:  var ,  let or const
 
 **var**
 is used throughout the whole program
-`var myName = "Hany";`
+```
+var myName = "Hany";
+```
 
 **let**
 is only used within the _scope_ where you declare it
-`let myCourse = "Free Code Camp";`
+```
+let myCourse = "Free Code Camp";
+```
 
 **const**
 a constant, that means you can not change it later
-`const pi = 3.14;`
+```
+const pi = 3.14;
+```
 
 
 #### Declaring and Assigning Variables
