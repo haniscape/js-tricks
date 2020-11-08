@@ -3,7 +3,7 @@
 [Link](https://www.youtube.com/watch?v=PkZNo7MFNFg)
 *Summary made by Hany Afifi*
 
- *Notice: Always end lines with semicolon* `;`
+ *Notice: End all lines in JavaScript with semicolon* `;`
 
 ### Inline Comment
 - Start in-line comment with `//`
@@ -56,11 +56,16 @@ const pi = 3.14;
 ```
 
 
-#### Declaring and Assigning Variables
+#### Declaring / Assigning Variables
 1. Declare a variable using: `var` , `let` or `const`
 ```
 var a;
 ```
+and Assign it using `=` with its name without var
+```
+a = 7
+```
+
 
 2. Declare new variable and Assign its value using `=` , this is called INITIALIZAING
 ```
@@ -91,6 +96,13 @@ a + b;   // now it will return 10 (5 + 5)
 ```
 
 
+#### JS variables is case sensitive 
+- in the following how the DECLARATIONS did not work with ASSIGNMENTS
+```
+var properCamelCase;
+PRoperCAmeLcaSe = 10;  
+properCamelCase;   // still returns undefined
+```
 
 
 #### Initializing Variables with the Assignment Operator (=)
@@ -115,3 +127,19 @@ a = a + 1;   // it returns 6
 b = b + 14;  // it returns 24
 c = c + " string";   // notice how we CONCATINATED 2 strings together using (+)
 ```
+
+#### Shortcut for Arithmatic operation with assigning values
+```
+var a = 3;
+a = a + 12;   // a now returns 15
+a += 12;  
+// this is shortcut to add a value to the variable and assigning the answer to that variable.
+```
+```
+var b = 25;
+a = a - 15;   // a now returns 10
+a -= 3;   // a now returns 7
+// this is shortcut to subtract a value from the variable and assigning the answer to that variable.
+```
+
+- And the same applies to 
