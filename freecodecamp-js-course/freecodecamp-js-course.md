@@ -133,17 +133,12 @@ c = c + " string";   // notice how we CONCATINATED 2 strings together using (+)
 ```
 var a = 3;
 a = a + 12;   // variable a now returns 15
-a += 12;   // shortcut way
-// this is shortcut to add a value to the variable and assigning the answer to that variable.
-console.log(a);   // will also return final sum i.e. 15
 ```
 
 ### Subtracting numbers
 ```
-var b = 25;
+var a = 25;
 a = a - 15;   // a now returns 10
-a -= 3;   // a now returns 7
-// this is shortcut to subtract a value from the variable and assigning the answer to that variable.
 ```
 
 ### Multiplying numbers
@@ -162,14 +157,11 @@ var quotient = 66 / 2;  // returns 33
 
 ```
 myVar = 87;
-// we saw that we can add to a number using `+` sign
-myVar = myVar + 1;
-// or using += shortcut
-myVar += 1;
-```
 
-but there is another way to increment numbers, that is using `++` after the variable name
-```
+// Increment the number using `+1` 
+myVar = myVar + 1;
+
+// or by adding `++` after the variable name
 myVar++;
 ```
 
@@ -177,9 +169,9 @@ myVar++;
 the same ways apply to decrementing a number:
 ```
 myVar = myVar - 1;
+
 // or
-myVar -= 1;
-// or
+
 myVar--;
 ```
 
@@ -206,3 +198,90 @@ console.log(myQuotient);   // returns 2.44
 
 ## Finding a Remainder
 _a **Remainder** is the integer "left over" after dividing one integer by another to produce an integer quotient_
+- in JS Modulo operator is this symbol `%`
+```
+var remainder;
+remainder = 11 % 3;   // returns 2
+// because 11 has three times of 3 , and the left over is 2
+```
+
+### Remainder to decide if the number is Odd or Even
+> **Even** if you devide the number by 2 and the remainder is 0
+> **Odd** if you divide the number by 2 and the remainder is > 0
+```
+var testOddEven;
+testOddEven = 243 % 2;   // returns 1  --> it is Odd
+
+var testOddEven;
+testOddEven = 360 % 2;   // returns 0  --> it is Even
+```
+
+### compound Assignment with Augmented Addition
+
+basically we use Assignment symbol `=` and addition `+`
+```
+var a = 11;
+a = a + 12;
+```
+
+ `+=`  is a Shortcut  to add a value to the variable and assigning the answer to that variable.
+```
+a += 12;
+```
+
+### compound Assignment with Augmented Subtraction
+`-=`  do the same thing but subtracting
+```
+var b = 9;
+b = b - 4;
+```
+or
+```
+b -= 4;
+```
+
+
+### compound Assignment with Augmented Multiplication
+`*=`  do the same thing but multiplying
+```
+var c = 12;
+c = c * 3;
+```
+or
+```
+c *= 3;
+```
+
+
+
+
+### compound Assignment with Augmented Divition
+`/=`  do the same thing but dividing
+```
+var d = 81;
+d = d / 9;
+```
+or
+```
+d *= 9;
+```
+
+
+
+## Strings
+to declare a STRING variable wrap its value with either:
+`double quotation marks ""`
+`single quotation marks ''`
+`backticks `` `
+
+
+```
+var firstName = "Hany";
+var lastName = 'Afifi';
+var fullName = `Hany Afifi`;
+```
+
+### Escaping Literal Quotes in strings
+> use ESCAPE CHARACTERS to help JS recognize the quotation marks correctly
+> put `double quotes` inside  `single quotes`
+> put both `double quotes` and `single quotes`  inside `backticks`
