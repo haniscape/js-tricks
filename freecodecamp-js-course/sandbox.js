@@ -1,1 +1,1 @@
-var a;
+var myProduct = 2.3 * 4;

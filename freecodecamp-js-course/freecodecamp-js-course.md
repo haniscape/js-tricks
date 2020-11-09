@@ -97,11 +97,11 @@ a + b;   // now it will return 10 (5 + 5)
 
 
 #### JS variables is case sensitive 
-- in the following how the DECLARATIONS did not work with ASSIGNMENTS
+- in the following DECLARATION did not affect ASSIGNMENT , why?
 ```
 var properCamelCase;
 PRoperCAmeLcaSe = 10;  
-properCamelCase;   // still returns undefined
+properCamelCase;   // still returns undefined, because these are 2 different variables
 ```
 
 
@@ -121,7 +121,7 @@ var b = 10;
 var c = "I am a";
 ```
 
-* Do Arithmatic operations (you can even mention the variable name on both sides)
+* Do Arithmatic operations 
 ```
 a = a + 1;   // it returns 6 
 b = b + 14;  // it returns 24
@@ -129,12 +129,16 @@ c = c + " string";   // notice how we CONCATINATED 2 strings together using (+)
 ```
 
 #### Shortcut for Arithmatic operation with assigning values
+### Adding numbers
 ```
 var a = 3;
-a = a + 12;   // a now returns 15
-a += 12;  
+a = a + 12;   // variable a now returns 15
+a += 12;   // shortcut way
 // this is shortcut to add a value to the variable and assigning the answer to that variable.
+console.log(a);   // will also return final sum i.e. 15
 ```
+
+### Subtracting numbers
 ```
 var b = 25;
 a = a - 15;   // a now returns 10
@@ -142,4 +146,63 @@ a -= 3;   // a now returns 7
 // this is shortcut to subtract a value from the variable and assigning the answer to that variable.
 ```
 
-- And the same applies to 
+### Multiplying numbers
+use the star symbol `*` to multiply numbers
+```
+var product = 8 * 10;  // returns 80
+```
+
+### Dividing numbers
+divide numbers using slash symbol `/`
+```
+var quotient = 66 / 2;  // returns 33
+```
+
+### Incrementing numbers
+
+```
+myVar = 87;
+// we saw that we can add to a number using `+` sign
+myVar = myVar + 1;
+// or using += shortcut
+myVar += 1;
+```
+
+but there is another way to increment numbers, that is using `++` after the variable name
+```
+myVar++;
+```
+
+### Decrementing numbers
+the same ways apply to decrementing a number:
+```
+myVar = myVar - 1;
+// or
+myVar -= 1;
+// or
+myVar--;
+```
+
+### Decimal numbers
+in JavaScript a Decimal number is any number that has a Decimal Point
+```
+var ourDecimal = 5.7;
+var myDecimal = 0.33334;
+```
+
+### Multiply Decimals
+Decimals and Integers, are both multiplied using `*`
+```
+var myProduct = 2.3 * 4;   
+console.log(myProduct);   // returns 9.2
+```
+
+### Divide Decimals
+Decimals and Integers, are both divided using `/`
+```
+var myQuotient = 4.88 / 2.0;   
+console.log(myQuotient);   // returns 2.44
+```
+
+## Finding a Remainder
+_a **Remainder** is the integer "left over" after dividing one integer by another to produce an integer quotient_
